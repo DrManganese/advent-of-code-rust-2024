@@ -1,9 +1,9 @@
-use anyhow::*;
-use std::fs::File;
-use std::io::{BufRead, BufReader};
+use adv_code_2024::start_day;
+use anyhow::{Ok, Result};
 use code_timing_macros::time_snippet;
 use const_format::concatcp;
-use adv_code_2024::*;
+use std::fs::File;
+use std::io::{BufRead, BufReader};
 
 const DAY: &str = "NN"; // TODO: Fill the day
 const INPUT_FILE: &str = concatcp!("input/", DAY, ".txt");
